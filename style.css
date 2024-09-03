@@ -266,6 +266,22 @@ footer {
     margin-top: 20px;
     width: 100%;
 }
+button {
+    padding: 10px 20px;
+    background-color: #fffb00; /* Color de fondo */
+    color: rgb(255, 0, 0); /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #cc0000; /* Color de fondo al pasar el mouse */
+}
+
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
