@@ -251,5 +251,7 @@ footer {
     }
     .imagen-juego,.logojuego1dentro {
         max-width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible en pantallas pequeñas */
+        width: auto;
+        padding: 0 20px;
     }
 }
