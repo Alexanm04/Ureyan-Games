@@ -12,6 +12,7 @@ a {
 }
 
 body{
+    overflow-x: hidden;
     background-image: url(images/fondoazul.webp);
     background-size: cover;
     background-position: center;
@@ -245,7 +246,7 @@ footer {
     }
 
     /* Elementos individuales en dispositivos móviles */
-    #juegos .game, #noticias .news, #nosotros .ours {
+    #juegos .game, #noticias .news, #nosotros .ours, #detalle-juego .imagenes-juego {
         flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho del contenedor en pantallas pequeñas */
         margin: 10px 0; /* Espacio arriba y abajo, sin márgenes laterales */
     }
