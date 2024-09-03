@@ -51,9 +51,11 @@ header {
 }
 
 .logo {
-    width: 400px;
+    width: 35%;
     height: auto;
-    margin-right: 30px;
+    margin: 0 auto;
+    display: block;
+    
 }
 
 #juegos {
@@ -63,11 +65,10 @@ header {
     width: 100%;
 }
 .logojuego1dentro{
-    width: 400px;
+    width: 30%;
     height: auto;
-    margin-right: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    margin: 0 auto;
+    display: block;
 }
 
 /* Estilo general para las imágenes del juego */
@@ -222,6 +223,7 @@ header nav ul li a {
     background-image: url(images/fondoazul.webp);
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 
 #contacto form input, 
@@ -246,6 +248,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+    width: 100%;
 }
 
 /* Media query para dispositivos móviles */
