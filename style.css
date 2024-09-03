@@ -52,6 +52,7 @@ header {
 
 .logo {
     width: 35%;
+    max-width: 300px;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -271,8 +272,8 @@ footer {
     }
 
     .logo {
-        width: 200px; /* Ajusta el tamaño según sea necesario */
+        width: 150px; /* Ajusta el tamaño según sea necesario */
         height: auto; /* Mantiene la proporción de la imagen */
-        margin: 0 auto; /* Centra la imagen horizontalmente */
+        margin: 0 auto;
     }
 }
