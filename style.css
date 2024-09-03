@@ -183,6 +183,21 @@ header nav ul li a {
     color: white;
 }
 
+#descargas .download {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+    background-color: rgb(253, 7, 7);
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+#descargas .download h3 {
+    margin: 15px 0;
+    color: black;
+}
 .imagen-juego1,
 #noticias .imagen-juego1 {
     max-width: calc(100% - 40px); /* Ajusta el ancho máximo restando el padding del contenedor */
@@ -255,13 +270,13 @@ footer {
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     /* Contenedores en dispositivos móviles */
-    #juegos .container, #noticias .container, #nosotros .container {
+    #juegos .container, #noticias .container, #nosotros .container,#descargas.container {
         flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
         align-items: center; /* Alinea los elementos en el centro */
     }
 
     /* Elementos individuales en dispositivos móviles */
-    #juegos .game, #noticias .news, #nosotros .ours, #detalle-juego .imagenes-juego {
+    #juegos .game, #noticias .news, #nosotros .ours, #detalle-juego .imagenes-juego #descargas.download{
         flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho del contenedor en pantallas pequeñas */
         margin: 10px 0; /* Espacio arriba y abajo, sin márgenes laterales */
     }
