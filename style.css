@@ -11,24 +11,19 @@ a {
     color: inherit;
 }
 
-body {
+body{
     background-image: url(images/fondoazul.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Contenedor principal */
-.contenedor {
+.contenedor{
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    display: flex;
-    flex-direction: column; /* Asegura que los hijos se apilen verticalmente */
-    align-items: center; /* Alinea horizontalmente al centro */
 }
-
-/* Contenedor general */
+/* Estilos de contenedor */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -38,24 +33,10 @@ body {
 
 /* Encabezado */
 header {
-    width: 100%;
     background-color: #000000;
-    color: white;
+    color: rgb(255, 0, 0);
     padding: 20px 0;
     text-align: center;
-}
-
-header nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el relleno interno */
-    margin: 0; /* Elimina el margen */
-    display: flex; /* Alinea los elementos del menú en una sola línea */
-    justify-content: center; /* Centra los elementos del menú horizontalmente */
-    align-items: center; /* Alinea los elementos del menú verticalmente */
-}
-
-header nav ul li {
-    margin-right: 15px; /* Espacio entre los elementos del menú */
 }
 
 .logo {
@@ -64,124 +45,174 @@ header nav ul li {
     margin-right: 30px;
 }
 
-/* Sección de Juegos */
 #juegos {
-    width: 100%;
-    padding: 50px 0;
     background-image: url(images/fondoazul.webp);
     background-size: cover;
     background-position: center;
 }
-
-#juegos .container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los juegos se envuelvan si no hay suficiente espacio */
-    justify-content: space-between; /* Distribuye uniformemente los juegos */
-    align-items: flex-start;
+.logojuego1dentro{
+    width: 400px;
+    height: auto;
+    margin-right: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
 }
 
+/* Estilo general para las imágenes del juego */
+.imagen-juego {
+    width: 500px; /* Cambia el ancho de la imagen a 300px */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    /* Otras opciones de estilo */
+    border-radius: 8px; /* Redondea las esquinas de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    margin: 10px; /* Añade espacio alrededor de las imágenes */
+    margin-bottom: 30px;
+    
+}
+#juegos .container {
+    display: flex; /* Utiliza Flexbox para alinear los juegos en fila */
+    flex-wrap: nowrap; /* Permite que los juegos se envuelvan a la siguiente línea si no hay suficiente espacio */
+    justify-content: space-between; /* Distribuye los juegos uniformemente con espacio entre ellos */
+    align-items: flex-start; /* Alinea los juegos al principio de la línea verticalmente */
+}
+
+/* Estilo para cada juego */
 #juegos .game {
-    flex: 1 1 45%; /* Cada juego ocupa el 45% del ancho del contenedor */
+    flex: 1 1 45%; /* Cada juego ocupa el 45% del ancho del contenedor, ajustándose según el espacio disponible */
+    margin: 2.5%; /* Espacio alrededor de cada juego */
+    background-color: rgb(253, 7, 7);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del contenedor */
+    transition: transform 0.3s ease; /* Transición suave para efectos de hover */
+}
+
+.info-adicional {
+    margin-bottom: 30px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección de Juegos */
+#juegos {
+    padding: 50px 0;
+    /*text-align: center;*/
+}
+
+
+#juegos .game {
+    display: inline-block;
+    width: 45%;
     margin: 2.5%;
     background-color: rgb(253, 7, 7);
     padding: 20px;
     text-align: center;
     color: white;
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
+}
+
+#juegos .game:hover{
+    transform:scale(1.1);
+}
+
+#noticias .news:hover{
+    transform:scale(1.1);
+
 }
 
 #juegos .game img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
-#juegos .game:hover {
-    transform: scale(1.1);
+#juegos .game h3 {
+    margin: 15px 0;
+    color: black;
 }
 
 /* Sección de Noticias */
 #noticias {
-    width: 100%;
     padding: 50px 0;
     background-image: url(images/fondoazul.webp);
     background-size: cover;
     background-position: center;
+
 }
 
-#noticias .container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que las noticias se envuelvan si no hay suficiente espacio */
-    justify-content: space-between; /* Distribuye uniformemente las noticias */
-    align-items: flex-start;
+#noticias .imagen-juego1{
+    width: 90%;
+    height: auto;
+    margin-right: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
 }
-
 #noticias .news {
-    flex: 1 1 45%; /* Cada noticia ocupa el 45% del ancho del contenedor */
+    display: inline-block;
+    width: 45%;
     margin: 2.5%;
     background-color: rgb(253, 7, 7);
     padding: 20px;
     text-align: center;
     color: white;
-    box-sizing: border-box;
 }
 
-#noticias .news img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.imagen-juego1,
+#noticias .imagen-juego1 {
+    max-width: calc(100% - 40px); /* Ajusta el ancho máximo restando el padding del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Redondea las esquinas de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    margin: 0; /* Elimina márgenes alrededor de las imágenes */
 }
 
-#noticias .news:hover {
-    transform: scale(1.1);
+#nosotros .imagen-personas{
+    max-width: calc(100% - 40px); /* Ajusta el ancho máximo restando el padding del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Redondea las esquinas de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    margin: 0; /* Elimina márgenes alrededor de las imágenes */
+    margin-top: 15px;
+}
+#noticias .news h3 {
+    margin-bottom: 15px;
+    color: black;
 }
 
-/* Sección de "¿Quiénes somos?" */
 #nosotros {
-    width: 100%;
     padding: 50px 0;
     background-image: url(images/fondoazul.webp);
     background-size: cover;
     background-position: center;
+    
 }
 
-#nosotros .container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
-    justify-content: space-between; /* Distribuye uniformemente los elementos */
-    align-items: flex-start;
-}
-
-#nosotros .ours {
-    flex: 1 1 45%; /* Cada elemento ocupa el 45% del ancho del contenedor */
-    margin: 2.5%;
-    background-color: rgb(253, 7, 7);
-    padding: 20px;
-    text-align: center;
+#nosotros .ours h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
     color: white;
-    box-sizing: border-box;
 }
-
-#nosotros .ours img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 /* Sección de Contacto */
 #contacto {
-    width: 100%;
     padding: 50px 0;
     background-image: url(images/fondoazul.webp);
     background-size: cover;
     background-position: center;
 }
 
-#contacto form input,
+#contacto form input, 
 #contacto form textarea {
     width: 100%;
     margin-bottom: 15px;
@@ -198,7 +229,6 @@ header nav ul li {
 
 /* Pie de página */
 footer {
-    width: 100%;
     background-color: #333;
     color: white;
     text-align: center;
