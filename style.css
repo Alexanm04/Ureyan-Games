@@ -249,4 +249,7 @@ footer {
         flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho del contenedor en pantallas pequeñas */
         margin: 10px 0; /* Espacio arriba y abajo, sin márgenes laterales */
     }
+    .imagen-juego,.logojuego1dentro {
+        max-width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible en pantallas pequeñas */
+    }
 }
