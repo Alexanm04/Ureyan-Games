@@ -38,6 +38,7 @@ body {
 
 /* Encabezado */
 header {
+    width: 100%;
     background-color: #000000;
     color: rgb(255, 0, 0);
     padding: 20px 0;
@@ -52,6 +53,7 @@ header {
 
 /* Sección de Juegos */
 #juegos {
+    width: 100%;
     padding: 50px 0;
     background-image: url(images/fondoazul.webp);
     background-size: cover;
@@ -89,6 +91,7 @@ header {
 
 /* Sección de Noticias */
 #noticias {
+    width: 100%;
     padding: 50px 0;
     background-image: url(images/fondoazul.webp);
     background-size: cover;
@@ -125,6 +128,7 @@ header {
 
 /* Sección de "¿Quiénes somos?" */
 #nosotros {
+    width: 100%;
     padding: 50px 0;
     background-image: url(images/fondoazul.webp);
     background-size: cover;
@@ -157,6 +161,7 @@ header {
 
 /* Sección de Contacto */
 #contacto {
+    width: 100%;
     padding: 50px 0;
     background-image: url(images/fondoazul.webp);
     background-size: cover;
@@ -180,6 +185,7 @@ header {
 
 /* Pie de página */
 footer {
+    width: 100%;
     background-color: #333;
     color: white;
     text-align: center;
