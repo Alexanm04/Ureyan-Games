@@ -195,6 +195,13 @@ header nav ul li a {
 
 }
 
+#descargas {
+    background-image: url(images/fondoazul.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
 #descargas .download h3 {
     margin: 15px 0;
     color: black;
