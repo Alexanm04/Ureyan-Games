@@ -1,0 +1,247 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-image: url(images/fondoazul.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilos de contenedor */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 400px;
+    height: auto;
+    margin-right: 30px;
+}
+
+#juegos {
+    background-image: url(images/fondoazul.webp);
+    background-size: cover;
+    background-position: center;
+}
+.logojuego1dentro{
+    width: 400px;
+    height: auto;
+    margin-right: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+}
+
+/* Estilo general para las imágenes del juego */
+.imagen-juego {
+    width: 500px; /* Cambia el ancho de la imagen a 300px */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    /* Otras opciones de estilo */
+    border-radius: 8px; /* Redondea las esquinas de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    margin: 10px; /* Añade espacio alrededor de las imágenes */
+    margin-bottom: 30px;
+    
+}
+#juegos .container {
+    display: flex; /* Utiliza Flexbox para alinear los juegos en fila */
+    flex-wrap: nowrap; /* Permite que los juegos se envuelvan a la siguiente línea si no hay suficiente espacio */
+    justify-content: space-between; /* Distribuye los juegos uniformemente con espacio entre ellos */
+    align-items: flex-start; /* Alinea los juegos al principio de la línea verticalmente */
+}
+
+/* Estilo para cada juego */
+#juegos .game {
+    flex: 1 1 45%; /* Cada juego ocupa el 45% del ancho del contenedor, ajustándose según el espacio disponible */
+    margin: 2.5%; /* Espacio alrededor de cada juego */
+    background-color: rgb(253, 7, 7);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del contenedor */
+    transition: transform 0.3s ease; /* Transición suave para efectos de hover */
+}
+
+.info-adicional {
+    margin-bottom: 30px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección de Juegos */
+#juegos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+#juegos .game {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+    background-color: rgb(253, 7, 7);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+#juegos .game:hover{
+    transform:scale(1.1);
+}
+
+#noticias .news:hover{
+    transform:scale(1.1);
+
+}
+
+#juegos .game img {
+    max-width: 100%;
+    height: auto;
+}
+
+#juegos .game h3 {
+    margin: 15px 0;
+    color: black;
+}
+
+/* Sección de Noticias */
+#noticias {
+    padding: 50px 0;
+    background-image: url(images/fondoazul.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#noticias .imagen-juego1{
+    width: 90%;
+    height: auto;
+    margin-right: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+}
+#noticias .news {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+    background-color: rgb(253, 7, 7);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.imagen-juego1,
+#noticias .imagen-juego1 {
+    max-width: calc(100% - 40px); /* Ajusta el ancho máximo restando el padding del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Redondea las esquinas de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    margin: 0; /* Elimina márgenes alrededor de las imágenes */
+}
+
+#nosotros .imagen-personas{
+    max-width: calc(100% - 40px); /* Ajusta el ancho máximo restando el padding del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Redondea las esquinas de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    margin: 0; /* Elimina márgenes alrededor de las imágenes */
+    margin-top: 15px;
+}
+#noticias .news h3 {
+    margin-bottom: 15px;
+    color: black;
+}
+
+#nosotros {
+    padding: 50px 0;
+    background-image: url(images/fondoazul.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#nosotros .ours h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+/* Sección de Contacto */
+#contacto {
+    padding: 50px 0;
+    background-image: url(images/fondoazul.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#contacto form input, 
+#contacto form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#contacto form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Contenedores en dispositivos móviles */
+    #juegos .container, #noticias .container, #nosotros .container {
+        flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+        align-items: center; /* Alinea los elementos en el centro */
+    }
+
+    /* Elementos individuales en dispositivos móviles */
+    #juegos .game, #noticias .news, #nosotros .ours {
+        flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho del contenedor en pantallas pequeñas */
+        margin: 10px 0; /* Espacio arriba y abajo, sin márgenes laterales */
+    }
+}
