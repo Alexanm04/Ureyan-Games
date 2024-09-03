@@ -19,10 +19,19 @@ body{
     background-repeat: no-repeat;
 }
 
+img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
 .contenedor{
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* Estilos de contenedor */
 .container {
@@ -38,6 +47,7 @@ header {
     color: rgb(255, 0, 0);
     padding: 20px 0;
     text-align: center;
+    width: 100%;
 }
 
 .logo {
@@ -50,6 +60,7 @@ header {
     background-image: url(images/fondoazul.webp);
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 .logojuego1dentro{
     width: 400px;
@@ -150,7 +161,7 @@ header nav ul li a {
     background-image: url(images/fondoazul.webp);
     background-size: cover;
     background-position: center;
-
+    width: 100%;
 }
 
 #noticias .imagen-juego1{
@@ -197,7 +208,7 @@ header nav ul li a {
     background-image: url(images/fondoazul.webp);
     background-size: cover;
     background-position: center;
-    
+    width: 100%;
 }
 
 #nosotros .ours h3 {
