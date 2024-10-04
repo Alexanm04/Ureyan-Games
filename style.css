@@ -129,7 +129,7 @@ header nav ul li a {
 }
 
 
-#juegos .game {
+/* #juegos .game {
     display: inline-block;
     width: 45%;
     margin: 2.5%;
@@ -137,10 +137,17 @@ header nav ul li a {
     padding: 20px;
     text-align: center;
     color: white;
-}
+} */
 
 #juegos .game:hover{
     transform:scale(1.1);
+}
+
+#noticias .container {
+    display: flex; /* Utiliza Flexbox para alinear los juegos en fila */
+    flex-wrap: nowrap; /* Permite que los juegos se envuelvan a la siguiente línea si no hay suficiente espacio */
+    justify-content: space-between; /* Distribuye los juegos uniformemente con espacio entre ellos */
+    align-items: flex-start; /* Alinea los juegos al principio de la línea verticalmente */
 }
 
 #noticias .news:hover{
@@ -174,14 +181,23 @@ header nav ul li a {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
 }
+
 #noticias .news {
-    display: inline-block;
-    width: 45%;
-    margin: 2.5%;
+    flex: 1 1 45%; /* Cada juego ocupa el 45% del ancho del contenedor, ajustándose según el espacio disponible */
+    margin: 2.5%; /* Espacio alrededor de cada juego */
     background-color: rgb(253, 7, 7);
     padding: 20px;
     text-align: center;
     color: white;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del contenedor */
+    transition: transform 0.3s ease; /* Transición suave para efectos de hover */
+}
+
+#descargas .container {
+    display: flex; /* Utiliza Flexbox para alinear los juegos en fila */
+    flex-wrap: nowrap; /* Permite que los juegos se envuelvan a la siguiente línea si no hay suficiente espacio */
+    justify-content: space-between; /* Distribuye los juegos uniformemente con espacio entre ellos */
+    align-items: flex-start; /* Alinea los juegos al principio de la línea verticalmente */
 }
 
 #descargas .download {
